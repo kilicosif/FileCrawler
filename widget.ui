@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>273</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文件批量下载器</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="widget">
+      <attribute name="title">
+       <string>操作</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3" stretch="2,1">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>15</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="lineEditTXTpath">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: white; /* 背景颜色设置为白色 */
+    color: black; /* 文本颜色设置为黑色，这样在白底上能看清 */
+    border: 1px solid #CCCCCC; /* 边框设置为浅灰色，1px 实线 */
+    border-radius: 5px; /* 边框圆角 */
+    padding: 5px; /* 内边距 */
+    font-size: 14px; /* 字体大小 */
+    selection-background-color: #0078D7; /* 选中文字的背景颜色 */
+    selection-color: white; /* 选中文字的颜色 */
+}
+
+QLineEdit:hover {
+    border: 1px solid #999999; /* 鼠标悬停时边框颜色变深一点 */
+}
+
+QLineEdit:focus {
+    border: 1px solid #0078D7; /* 获得焦点时边框颜色变为亮蓝色 */
+    outline: none; /* 移除默认的焦点轮廓 */
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonOpenTXT">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>120</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #999999;
+}
+
+QPushButton:pressed {
+    background-color: #E0E0E0;
+    border: 2px solid #00FF00;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: #F8F8F8;
+    color: #AAAAAA;
+    border: 1px solid #DDDDDD;
+}</string>
+               </property>
+               <property name="text">
+                <string>打开TXT文件</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLineEdit" name="lineEditFolderPath">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: white; /* 背景颜色设置为白色 */
+    color: black; /* 文本颜色设置为黑色，这样在白底上能看清 */
+    border: 1px solid #CCCCCC; /* 边框设置为浅灰色，1px 实线 */
+    border-radius: 5px; /* 边框圆角 */
+    padding: 5px; /* 内边距 */
+    font-size: 14px; /* 字体大小 */
+    selection-background-color: #0078D7; /* 选中文字的背景颜色 */
+    selection-color: white; /* 选中文字的颜色 */
+}
+
+QLineEdit:hover {
+    border: 1px solid #999999; /* 鼠标悬停时边框颜色变深一点 */
+}
+
+QLineEdit:focus {
+    border: 1px solid #0078D7; /* 获得焦点时边框颜色变为亮蓝色 */
+    outline: none; /* 移除默认的焦点轮廓 */
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonFolderSelect">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>120</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #999999;
+}
+
+QPushButton:pressed {
+    background-color: #E0E0E0;
+    border: 2px solid #00FF00;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: #F8F8F8;
+    color: #AAAAAA;
+    border: 1px solid #DDDDDD;
+}</string>
+               </property>
+               <property name="text">
+                <string>选择存储目录</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButtonConfirm">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #999999;
+}
+
+QPushButton:pressed {
+    background-color: #E0E0E0;
+    border: 2px solid #00FF00;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: #F8F8F8;
+    color: #AAAAAA;
+    border: 1px solid #DDDDDD;
+}</string>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonRefresh">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #999999;
+}
+
+QPushButton:pressed {
+    background-color: #E0E0E0;
+    border: 2px solid #00FF00;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: #F8F8F8;
+    color: #AAAAAA;
+    border: 1px solid #DDDDDD;
+}</string>
+           </property>
+           <property name="text">
+            <string>刷新</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonShowError">
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #999999;
+}
+
+QPushButton:pressed {
+    background-color: #E0E0E0;
+    border: 2px solid #00FF00;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: #F8F8F8;
+    color: #AAAAAA;
+    border: 1px solid #DDDDDD;
+}</string>
+           </property>
+           <property name="text">
+            <string>报错</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonClose">
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #999999;
+}
+
+QPushButton:pressed {
+    background-color: #E0E0E0;
+    border: 2px solid #00FF00;
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: #F8F8F8;
+    color: #AAAAAA;
+    border: 1px solid #DDDDDD;
+}</string>
+           </property>
+           <property name="text">
+            <string>关闭</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>关于</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;      本工具用于读取TXT中的文件下载网址，并按与网址中相同的文件路径存储（包含主机名）到指定的本地目录。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;      &lt;span style=&quot; font-weight:700;&quot;&gt;确认：&lt;/span&gt;开始下载&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;      &lt;span style=&quot; font-weight:700;&quot;&gt;刷新：&lt;/span&gt;清空路径，以便重新使用&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;      报错：&lt;/span&gt;用以显示下载失败的文件&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;      关闭：&lt;/span&gt;关闭程序&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;      如果目的路径中已有同名文件则会跳过下载。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;      程序运行时显示日志信息，并在运行完毕后存储到目标文件夹下的logFiles文件夹。&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelLog">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

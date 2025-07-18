@@ -1,0 +1,55 @@
+# Build artifacts
+*.o
+*.obj
+*.moc
+*.qrc
+*.qml
+*.rc
+*.res
+*.core
+*.s
+*.d
+
+# Compilation output
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+*.a
+*.exp
+*.ilk
+*.pdb
+*.prl
+*.bin
+
+# Qt Creator files
+*.user
+*.pro.user
+*.pro.user.*
+*.autosave
+*.bak
+*.qmake.stash
+
+# Build directories
+build/
+debug/
+release/
+.qmake.stash
+
+# Other common build tool outputs
+*.cmake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*~
